@@ -101,19 +101,29 @@
 # a = [n...6]
 #----
 
-a = []
-b = []
-c = []
+A = []
+B = []
+C = []
 
-n = int(input("number: "))
+Num = int(input("number: "))
 
-for x in range(n,0,-1):
-    a.append(x)
+for x in range(Num,0,-1):
+    A.append(x)
 
+def hanoi(a,b,c):
+    n=1
+    b.append(n)
+    a.remove(n)
 
+    c.append(n+1)
+    a.remove(n+1)
+    c.append(n)
+    b.remove(n)
+    
 
+    return a,b,c
 
-
+print(hanoi(A,B,C))
 
 
 
