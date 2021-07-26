@@ -1,0 +1,79 @@
+<h1> 완전탐색과 이분탐색 </h1>
+
+<h2> 탐색의 종류 </h2>
+
+<table>
+    　　<tr>
+    　　　　<td><strong>완전탐색</strong></td>
+    　　　　<td>__이분탐색__</td>
+    　　　　<td>깊이우선탐색</td>
+    　　　　<td>너비우선탐색</td>
+    　　</tr>
+    　　<tr>
+    　　　　<td>문자열탐색</td>
+    　　　　<td>KMP</td>
+    　　　　<td>BM</td>
+    　　</tr>
+    </table>
+
+<h2> 완전탐색(Full Search)) </h2>
+
+
+<ol>
+
+<li> <strong>의미</strong> </li>
+<p>
+가능한 모든 경우의 수를 탐색
+</p>
+
+<li> <strong>특징</strong></li> 
+
+- 'Brute Force' 라고도 불림 : 무식하게 전부 샅샅이 찾아찾아본다는 맥락?
+- 컴퓨터의 빠른 계산속도를 이용한 방법
+- 모든 경우의 수를 계산하기 때문에, 결과 값의 신뢰성이 매우 높음
+- 탐색시간이 오래걸리고 효율성이 최악
+
+<li><strong>구현방법</strong></li>
+
+<table>
+    　　<tr>
+    　　　　<th>반복문</th>
+    　　　　<td>For문</td>
+    　　　　<td>while문</td>
+    　　</tr>
+    　　<tr>
+    　　　　<th>재귀함수</th>
+    　　　　<td>동적 계획법</td>
+    　　　　<td>백트래킹</td>
+            <td>탐욕법</td>
+    　　</tr>
+</table>
+
+- 동적 계획법, 백트래킹, 탐욕법은 추후에 공부
+- 반복문 : 0부터 끝까지 모든 index값을 대입하여 target값를 찾는다 
+- 재귀함수 : 여러가지의 모델이 있지만, return에 자기자신을 호출하되 파라미터인 index에 +1을 추가하여 모든 index를 탐색하는 방법이 있다 
+
+</ol>
+
+<hr>
+
+<h2> 이분탐색(Binary search) </h2>
+
+
+<ol>
+
+<li> <strong>의미</strong> : 탐색할 데이터를 반으로 나누고 target의 위치를 탐색하는 원리를 반복</li>
+
+<li> <strong>특징</strong></li> 
+
+<p>
+- 이진탐색 이라고도 한다 
+- 탐색할 데이터가 정렬되어 있어야 한다
+</p>
+
+<li><strong>구현방법</strong></li>
+
+- 가장 왼쪽과 오른쪽의 index를 변수로 설정하고 index를 이등분한 후, 중앙값 또한 변수로 설정한다
+- 중앙값인 mid를 기준으로 target값을 탐색하는데, target이 mid보다 작으면 오른쪽 변수값을 수정하고, 크면 왼쪽 변수값을 수정하며 좁혀나간다 
+
+</ol>
