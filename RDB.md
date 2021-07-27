@@ -18,7 +18,7 @@
 3. ERD - 개체-관계형 데이터베이스(Entity-Relationship)
    - Entity    -> Table
    - Atrribute -> Column
-   - Relation  -> PK(Primary Key),FK(Foriegn?)
+   - Relation  -> PK(Primary Key),FK(Foreign?)
    - Tuple     -> Row
 
 
@@ -40,7 +40,7 @@
 
    - 식별자인 primary key 에는 밑줄을 그어준다 -> 스키마에서? 
 
-   - Foriegn key(외래키) : 다른 테이블에서 가져온 키? 
+   - Foreign key(외래키) : 다른 테이블에서 가져온 키? 
 
 
 6. Cardinality 와 Optionality
