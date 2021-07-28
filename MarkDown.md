@@ -1,3 +1,7 @@
+참고하기 https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+----
+
 span / div 차이
 - div - 데이터를 넣을 수 있는 사각형을 생성
 - 아직 둘 다 사용해보지 않음 
