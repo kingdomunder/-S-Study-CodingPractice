@@ -102,14 +102,13 @@ __자주 사용 예정__<br>
 <h1>기록</h1>
 
 - 21/07/24 
-- \<ol>\<li> 로 목록을 구성하는 중간에 ---- 로 구분선을 넣으면, 목록을 표시하는 숫자와 부가 설명의 연결이 끊어져서 표시된다
-- VSC의 Preview에서는 문제가 없었지만, git에 업로드 했을 때 발생 
+  - \<ol>\<li> 로 목록을 구성하는 중간에 ---- 로 구분선을 넣으면, 목록을 표시하는 숫자와 부가 설명의 연결이 끊어져서 표시된다
+  - VSC의 Preview에서는 문제가 없었지만, git에 업로드 했을 때 발생 
 
 ----
 - 21/07/26
-- __HTML과 Markdown(MD)의 차이__ 
-<br>
-<br>
-- HTML : HyperText Markup Language - MD와 다르다 
-- __text__와 같은 문법은 HTML이 아니다?
+  - __HTML과 Markdown(MD)의 차이__ 
+  - HTML : HyperText Markup Language - MD와 다르다 
+  - __text__와 같은 문법은 HTML이 아니다?
+  
 - 참고 http://leechoong.com/posts/2017/markdown_intro/
