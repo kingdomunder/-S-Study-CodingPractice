@@ -1,5 +1,5 @@
 # 11.타겟넘버 / DFS와 BFS
-# https://www.acmicpc.net/problem/2606
+# https://programmers.co.kr/learn/courses/30/lessons/43165
 
 # ----------------------------------------------------------------------------------------
 
