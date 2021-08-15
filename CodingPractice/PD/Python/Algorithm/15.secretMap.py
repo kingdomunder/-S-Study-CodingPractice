@@ -121,8 +121,9 @@ def solution(n, arr1, arr2):
         binary = (bin(arr1[i] | arr2[i]))[2: ] # 두 정수배열을 OR연산 한 후에 2진수화, String인 2진수에서 앞쪽의 0b를 제거
         
         if len(binary) < n:     # 변환한 2진수(지도조각)가 전체지도 변의 길이보다 작으면
-            gap = n - len(binary)   
-            binary = ("0" * gap) + binary   # 그 차이만큼 왼쪽에 0을 추가
+            # gap = n - len(binary)   
+            # binary = ("0" * gap) + binary   # 그 차이만큼 왼쪽에 0을 추가
+            binary = binary.rjust(n,"0")    # 문자열.rjust(정해진int값 길이에 맞춰서 , 왼쪽에 문자열을 채운다)   == padding 
 
         binary = binary.replace("1","#").replace("0"," ")   # 1은 #으로 / 0은 공백으로 변환
 
