@@ -54,8 +54,8 @@ import sys
 
 numbers = []
 while True:
-    Input = int(sys.stdin.readline())
-    # Input = int(input())
+    Input = sys.stdin.readline()    
+    # Input = str(input())
     if Input == 0:    # 0이면 입력종료
         break
     else:
@@ -68,6 +68,7 @@ for num in numbers:    # 리스트의 숫자 중 하나를 꺼내서 계산 시�
         for j in range( (len(num)-i) ,0,-1):   # 파라미터를 이용해 팩토리얼도 구성 / i = 0 , j = 3,2,1   // i = 1 , j = 2,1 ...
             factorial *= j
         sum += ( int(num[i]) * factorial) 
+    
     print(sum)
 
 # ----------------------------------------------------------------------------------------
